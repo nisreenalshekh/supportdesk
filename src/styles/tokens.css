@@ -1,0 +1,54 @@
+/* Design tokens. Everything else in the app reads from these variables. */
+:root {
+  --bg: #f4f6fb;
+  --surface: #ffffff;
+  --surface-alt: #fafbfd;
+  --ink: #0f172a;
+  --ink-2: #475569;
+  --ink-3: #94a3b8;
+  --line: #e6eaf2;
+
+  --brand: #4f46e5;
+  --brand-hover: #4338ca;
+  --brand-2: #6366f1;
+  --brand-soft: #eef0ff;
+
+  --nav: #0b1020;
+  --nav-2: #141b33;
+
+  --red: #e5484d;
+  --red-soft: #fdecec;
+  --amber: #d97706;
+  --amber-soft: #fff4de;
+  --green: #16a34a;
+  --green-soft: #e4f6ea;
+  --blue: #2563eb;
+  --blue-soft: #e6efff;
+  --gray: #64748b;
+  --gray-soft: #eef1f6;
+
+  --radius-card: 16px;
+  --radius-control: 11px;
+  --shadow-card: 0 1px 2px rgba(15, 23, 42, 0.04);
+  --shadow-btn: 0 6px 16px rgba(79, 70, 229, 0.3);
+  --font: "Inter", system-ui, -apple-system, "Segoe UI", sans-serif;
+}
+
+/* Dark theme: toggled with data-theme="dark" on <html> */
+:root[data-theme="dark"] {
+  --bg: #0b1020;
+  --surface: #131a2e;
+  --surface-alt: #172038;
+  --ink: #e8ecf7;
+  --ink-2: #aab3cf;
+  --ink-3: #6b7699;
+  --line: #232c47;
+  --brand-soft: #232a5c;
+  --red-soft: #3a1b1f;
+  --amber-soft: #3a2c10;
+  --green-soft: #12301f;
+  --blue-soft: #14284d;
+  --gray-soft: #1e2740;
+  --nav: #070b17;
+  --nav-2: #10172b;
+}
