@@ -4,6 +4,8 @@ import RequireAuth from "./components/layout/RequireAuth";
 import { ToastProvider } from "./components/ui/Toast";
 import DashboardPage from "./pages/DashboardPage";
 import LoginPage from "./pages/LoginPage";
+import TicketDetailPage from "./pages/TicketDetailPage";
+import TicketsPage from "./pages/TicketsPage";
 import { StoreProvider, useStore } from "./store/StoreContext";
 
 function HomeRedirect() {
@@ -25,7 +27,9 @@ export default function App() {
               <Route element={<AppShell />}>
                 <Route element={<RequireAuth agentOnly />}>
                   <Route path="/dashboard" element={<DashboardPage />} />
+                  <Route path="/tickets" element={<TicketsPage />} />
                 </Route>
+                <Route path="/tickets/:id" element={<TicketDetailPage />} />
               </Route>
             </Route>
 
