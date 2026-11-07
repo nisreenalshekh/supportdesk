@@ -69,6 +69,13 @@
 }
 
 @media (max-width: 560px) {
-  .kpis { grid-template-columns: 1fr; }
+  .kpis, .kpis--3 { grid-template-columns: 1fr; }
   .topbar .btn-label { display: none; }
+}
+
+@media print {
+  .sidebar, .topbar, .page-head__actions, .toasts { display: none !important; }
+  .app { display: block; }
+  .main { padding: 0; }
+  body { background: #fff; }
 }
