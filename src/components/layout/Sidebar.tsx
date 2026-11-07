@@ -104,7 +104,12 @@ export default function Sidebar({ open, onClose }: { open: boolean; onClose: () 
                 ),
             )}
             <hr />
-            <button onClick={toggleTheme}>
+            <button
+              onClick={() => {
+                toggleTheme();
+                close();
+              }}
+            >
               {theme === "light" ? <Moon size={16} /> : <Sun size={16} />}
               {theme === "light" ? "Dark mode" : "Light mode"}
             </button>

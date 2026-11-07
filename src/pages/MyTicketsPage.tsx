@@ -49,7 +49,7 @@ export default function MyTicketsPage() {
         </Button>
       </div>
 
-      <div className="kpis" style={{ gridTemplateColumns: "repeat(3, 1fr)" }}>
+      <div className="kpis kpis--3">
         <KpiCard label="Active" value={active.length} icon={<Clock size={18} />} color="#d97706" soft="var(--amber-soft)" />
         <KpiCard label="Resolved" value={resolved.length} icon={<CheckCircle2 size={18} />} color="#16a34a" soft="var(--green-soft)" />
         <KpiCard label="Waiting on you" value={waitingOnMe} icon={<AlertTriangle size={18} />} color="#2563eb" soft="var(--blue-soft)" />
